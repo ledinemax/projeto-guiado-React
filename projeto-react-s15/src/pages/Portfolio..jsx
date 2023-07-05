@@ -31,13 +31,14 @@ const Portfolio = () => {
         title="Meus projetos"
         image={porfolioIMG}
       />
-      <div className={styles.reposContainer}>
+     <div className={styles.repoContainer}>
+     <div className={styles.cardContainer}>
         {repos.map((repo) => {
           return (
-            <div className={styles.Card}>
-              <h3 className={styles.cardTitle} key={repo.id}>{repo.name}</h3>
-              <p className={styles.cardText}>{repo.description}</p>
-              <a className={styles.cardLink} 
+            <div className={styles.cardRepo}>
+              <h3 className={styles.cardRepoTitle} key={repo.id}>{repo.name}</h3>
+              <p className={styles.cardRepoText}>{repo.description}</p>
+              <a className={styles.cardRepoLink} 
               href={repo.html_url} target="_blank" 
               rel="noreferrer">
                 <ArrowBendDownRight size={32} weight="thin" color="#fff"/>
@@ -46,6 +47,7 @@ const Portfolio = () => {
           )
         })}
       </div>
+     </div>
     </>
   )
 }
