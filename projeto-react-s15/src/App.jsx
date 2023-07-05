@@ -1,12 +1,12 @@
-import { useState } from 'react'
-
+import Router from './Router'
+import './global.css'
 function App() {
 
 
   return (
-    <>
-     <h1>hi lorena</h1>
-    </>
+    <div className='App'>
+      <Router/>
+    </div>
   )
 }
 
