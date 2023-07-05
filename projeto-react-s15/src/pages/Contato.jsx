@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 //FIREBASE
-import dataBase from '../services/firebase'
+import database from '../services/firebase'
 import { ref, push, set} from 'firebase/database'
 
 import Header from '../components/Header'
@@ -10,28 +10,37 @@ import styles from '../styles/pages/contato.module.css'
 import contato from '../assets/contato.svg'
 
 const Contato = () => {
-  const [nome, setNome] = useState('')
+  const [name, setName] = useState('')
   const [email, setEmail] = useState('')
-  const [mensagem, setMensagem] = useState('')
+  const [message, setMessage] = useState('')
 
 
   function handleInputName(e) {
-    setNome(e.target.value)
+    setName(e.target.value)
   }
 
   function handleInputEmail(e) {
     setEmail(e.target.value)
   }
 
-  function handleInputMensagem(e) {
-    setMensagem(e.target.value)
+  function handleInputMessage(e) {
+    setMessage(e.target.value)
   }
 
   function handleSubmit(e){
     e.preventDefault()
 
+    const messageListRef = ref(database, 'messages') //cria coleção no DB do Firebase
+    const newMessageRef = push(messageListRef) // cria e envia nova mensagem na coleção
+    set(newMessageRef, {
+      name: name,
+      email: email,
+      text: message
+    }) 
     
-
+    setName('')
+    setEmail('')
+    setMessage('')
   }
 
   return (
@@ -49,7 +58,7 @@ const Contato = () => {
             type="text"
             placeholder='Digite seu nome'
             onChange={handleInputName}
-            value={nome}
+            value={name}
           />
           <input className={styles.formInput}
             type="email"
@@ -59,8 +68,8 @@ const Contato = () => {
           />
           <textarea className={styles.formInput}
             placeholder='Digite sua mensagem'
-            onChange={handleInputMensagem}
-            value={mensagem}
+            onChange={handleInputMessage}
+            value={message}
           />
           <button className={styles.formButton}
             type='submit'>Enviar mensagem
