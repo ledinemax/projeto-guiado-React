@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import style from '../style/components/menu.module.css'
+import style from '../styles/components/menu.module.css'
 
 const Menu = () => {
     return (

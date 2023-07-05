@@ -1,16 +1,16 @@
 .menuContainer {
-    background-color: white;
+    background-color: #131313;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10rem;
     padding: 1rem;
     list-style: none;
-
+    font-weight: 500;
 }
 
 .menuLink {
     text-decoration: none;
-    color: #686AAC;
+    color: var(--green);
     font-size: 1.5em;
 }

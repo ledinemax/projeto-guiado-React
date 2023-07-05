@@ -1,0 +1,42 @@
+.sobreContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--dark);
+    gap: 3rem;
+    color: var(--light);
+    text-align: justify;
+    list-style: decimal;
+}
+
+.sobreCard{
+    width: 30rem;
+    background-color: var(--grey);
+    padding: 1.2rem;
+    border-radius: 120px;
+}
+
+.sobreTitle {
+    color: var(--redish);
+    font-size: 1.5rem;
+    text-align: center;
+    padding-bottom: .5rem;
+}
+
+.sobreImg{
+    width: 20%;
+    border-radius: 300px;
+}
+
+.cardCurisidades{
+    padding-top: .9rem;
+    padding-bottom: .3rem;
+    color: var(--light);
+    font-size: .9rem;
+    text-align: center;
+}
+.curiosidadesTitle {
+    text-align: center;
+    color: var(--redish);
+}

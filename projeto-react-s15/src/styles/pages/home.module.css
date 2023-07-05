@@ -1,0 +1,26 @@
+.homeContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    background-color: var(--dark);
+    padding: 5rem;
+    box-shadow: inset 0px 1px 3px 0px rgba(0,0,0,0.75);
+}
+
+.cardContainer {
+    text-align: center;
+}
+
+.cardTitle{
+    color: var(--green);
+}
+
+.cardDescription {
+    color: var(--light);
+    text-align: justify;
+    letter-spacing: -1px;
+    font-weight: 400;
+    text-shadow: 1px 1px 1px black;
+}
+

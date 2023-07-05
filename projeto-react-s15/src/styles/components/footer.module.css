@@ -1,0 +1,14 @@
+.footerContainer {
+    background-color: var(--darker);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    position: relative;
+}
+
+.footerContent {
+    color: var(--green);
+    font-size: .8rem;
+}
+

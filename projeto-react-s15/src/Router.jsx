@@ -17,7 +17,7 @@ const Router = () => {
                 <Route path='/portfolio' element={<Portfolio/>} />
                 <Route path='contato' element={<Contato/>} />
             </Routes>
-            <Footer content='Feito com amor por Ledine Maximiano. Todos os direitos reservados.'/>
+            <Footer content='Feito por Ledine Maximiano guiado pela Lilit Bandeira. Todos os direitos reservados.'/>
         </BrowserRouter>
     )
 }
