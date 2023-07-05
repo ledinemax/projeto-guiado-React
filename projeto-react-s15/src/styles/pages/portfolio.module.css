@@ -16,15 +16,15 @@
     grid-template-columns: 1fr 1fr;
     /* justify-content: center;
     align-items: center; */
-    width: 80%;
+    width: 90%;
     gap: 2rem;
     margin-left: 14rem;
 }
 
 .cardRepo {
     background: #686AAC;
-    width: 70%;
-    height: 230px;
+    width: 80%;
+    height: 30vh;
     padding: 2rem;
     border-radius: 4px;
     text-align: center;
@@ -36,7 +36,7 @@
   }
 
   .cardRepoText {
-    font-size: .9rem;
+    font-size: .8rem;
     color: #f3f3f3;
   }
   
