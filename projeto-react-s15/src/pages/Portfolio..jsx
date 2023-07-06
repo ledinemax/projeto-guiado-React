@@ -31,23 +31,24 @@ const Portfolio = () => {
         title="Meus projetos"
         image={porfolioIMG}
       />
-     <div className={styles.repoContainer}>
-     <div className={styles.cardContainer}>
-        {repos.map((repo) => {
-          return (
-            <div className={styles.cardRepo}>
-              <h3 className={styles.cardRepoTitle} key={repo.id}>{repo.name}</h3>
-              <p className={styles.cardRepoText}>{repo.description}</p>
-              <a className={styles.cardRepoLink} 
-              href={repo.html_url} target="_blank" 
-              rel="noreferrer">
-                <ArrowBendDownRight size={32} weight="thin" color="#fff"/>
-              </a>
-            </div>
-          )
-        })}
+      <div className={styles.repoContainer}>
+      <h2 className={styles.repoTitle}>Outros projetos no GitHub</h2>
+        <div className={styles.cardContainer}>
+          {repos.map((repo) => {
+            return (
+              <div key={repo.id} className={styles.cardRepo}>
+                <h3 className={styles.cardRepoTitle}>{repo.name}</h3>
+                <p className={styles.cardRepoText}>{repo.description}</p>
+                <a className={styles.cardRepoLink}
+                  href={repo.html_url} target="_blank"
+                  rel="noreferrer">
+                 <ArrowBendDownRight size={28} color="#d9eecd" weight="duotone" />
+                </a>
+              </div>
+            )
+          })}
+        </div>
       </div>
-     </div>
     </>
   )
 }
