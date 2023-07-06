@@ -9,40 +9,37 @@ const Home = () => {
   return (
     <>
       <Header
-        title="Site da Lê"
+        title="Meu cantinho"
         image={home}
-        text='Lorem ipsum dolor sit amet,
-        consectetur adipisicing elit. Neque facilis qui dignissimos
-        blanditiis vel eius nobis autem? Officiis optio,  sed dolore debitis enim
-        perferendis aperiam nobis voluptate harum quae officia'
+        text='Aqui vou falar um poquinho sobre quem sou, do que
+        gosto, e como começou e está sendo minha trajetória com
+        front-end e meu projetinhos.'
       />
 
       <div className={styles.homeContainer}>
         <div className={styles.cardContainer}>
-          <h2 className={styles.cardTitle}>Sobre</h2>
-          <Butterfly size={65} color="#B2D6B5" weight="duotone" />
-          <p className={styles.cardDescription}>Lorem ipsum dolor sit amet,
-            consectetur adipisicing elit. Neque facilis qui dignissimos
-            blanditiis vel eius nobis autem? Officiis optio,  sed dolore debitis enim
-            perferendis aperiam nobis voluptate harum quae officia.</p>
+          <h2 className={styles.cardTitle}>SOBRE MIM</h2>
+          <Butterfly size={65} color="#fad499" weight="duotone" />
+          <p className={styles.cardDescription}>Aqui conto um poquinho sobre quem sou, 
+          minha formação, como vim parar na area da tecnologia, 
+          e um pouco mais sobre meus sonhos,
+          meus gostos e algumas curiosidades.</p>
         </div>
 
         <div className={styles.cardContainer}>
-          <h2 className={styles.cardTitle}>Códigos</h2>
-          <Code size={64} color="#B2D6B5" weight="duotone" />
-          <p className={styles.cardDescription}>Lorem ipsum dolor sit amet,
-            consectetur adipisicing elit. Neque facilis qui dignissimos
-            blanditiis vel eius nobis autem? Officiis optio,  sed dolore debitis enim
-            perferendis aperiam nobis voluptate harum quae officia.</p>
+          <h2 className={styles.cardTitle}>CÓDIGOS</h2>
+          <Code size={64} color="#fad499" weight="duotone" />
+          <p className={styles.cardDescription}> Aqui mostro meus projetos do GitHub enquando
+          estudo na Front-End Reprograma, dando destaque para alguns 
+          dos meus projetos favoritos. 
+          </p>
         </div>
 
         <div className={styles.cardContainer}>
-          <h2 className={styles.cardTitle}>Vem Hablar</h2>
-          <AddressBook size={65} color="#B2D6B5" weight="duotone" />
-          <p className={styles.cardDescription}>Lorem ipsum dolor sit amet,
-            consectetur adipisicing elit. Neque facilis qui dignissimos
-            blanditiis vel eius nobis autem? Officiis optio,  sed dolore debitis enim
-            perferendis aperiam nobis voluptate harum quae officia.</p>
+          <h2 className={styles.cardTitle}>VEM HABLAR</h2>
+          <AddressBook size={65} color="#fad499" weight="duotone" />
+          <p className={styles.cardDescription}>Entre em contato comigo. 
+          Seja para entrevistas de emprego como deva ou para trocarmos ideias sobre os estudos.</p>
         </div>
       </div>
     </>

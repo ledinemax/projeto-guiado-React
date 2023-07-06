@@ -1,21 +1,26 @@
 import { Link } from 'react-router-dom'
-import style from '../styles/components/menu.module.css'
+import styles from '../styles/components/menu.module.css'
 
 const Menu = () => {
     return (
-        <nav className={style.menuContainer}>
-            <li>
-                <Link className={style.menuLink} to='/'>Home</Link>
-            </li>
-            <li>
-                <Link className={style.menuLink} to='/sobre'>Sobre</Link>
-            </li>
-            <li>
-                <Link className={style.menuLink} to='/portfolio'>Portfólio</Link>
-            </li>
-            <li>
-                <Link className={style.menuLink} to='/contato'>Contato</Link>
-            </li>
+        <nav className={styles.menuContainer}>
+            <div className={styles.logo}>LÊMAX</div>
+            <div className={styles.navLink}>
+                <ul className={styles.navItens}>
+                    <li>
+                        <Link to='/'>HOME</Link>
+                    </li>
+                    <li>
+                        <Link to='/sobre'>SOBRE</Link>
+                    </li>
+                    <li>
+                        <Link to='/portfolio'>CÓDIGOS</Link>
+                    </li>
+                    <li>
+                        <Link to='/contato'>VEM HABLAR</Link>
+                    </li>
+                </ul>
+            </div>
         </nav>
     )
 }

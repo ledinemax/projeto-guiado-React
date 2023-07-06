@@ -1,45 +1,54 @@
-.repoContainer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    color: aquamarine;
-    text-align: center;
-    padding-top: 6rem;
-    background-color: var(--dark);
-    padding-bottom: 3rem
+.repoContainer {
+  width: 100%;
+  background-color: var(--two);
+  text-align: center;
+  padding-top: 6rem;
+
 }
 
 
-.cardContainer{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    /* justify-content: center;
-    align-items: center; */
-    width: 90%;
-    gap: 2rem;
-    margin-left: 14rem;
+
+.cardContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+  gap: 3rem;
+  padding: 2rem;
+  text-decoration: none;
 }
+
+
 
 .cardRepo {
-    background: #686AAC;
-    width: 80%;
-    height: 30vh;
-    padding: 2rem;
-    border-radius: 4px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 1rem;
-  }
+  background: var(--three);
+  width: 30%;
+  height: 230px;
+  padding: 2rem;
+  border-radius: 4px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: .6rem;
+  box-shadow: 11px 0px 3px -4px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
+      text-decoration: none;
+}
 
-  .cardRepoText {
-    font-size: .8rem;
-    color: #f3f3f3;
-  }
-  
-  /* .cardRepoTitle {
+.cardRepoTitle {
+  padding-top: .5rem;
+  color: var(--four);
+}
 
-  } */
+.cardRepoText {
+  font-size: .8rem;
+  text-align: justify;
+}
+
+.repoTitle {
+  color: var(--four);
+}
+

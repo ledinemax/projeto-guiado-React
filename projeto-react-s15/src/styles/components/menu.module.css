@@ -1,16 +1,39 @@
-.menuContainer {
-    background-color: #131313;
+nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    gap: 10rem;
-    padding: 1rem;
-    list-style: none;
-    font-weight: 500;
+    color: var(--four);
+    background-color: var(--six);
 }
 
-.menuLink {
-    text-decoration: none;
-    color: var(--green);
-    font-size: 1.5em;
+
+.navItens {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+ 
 }
+
+.navItens>li>a {
+    padding-left: 20px;
+    text-decoration: none;
+    font-family: 'Caprasimo', cursive;
+    color: var(--four);
+}
+
+.logo {
+    font-size: 2rem;
+    letter-spacing: .4rem;
+    color: var(--five);
+    font-family: 'Bungee Shade', cursive;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.navItens>li:hover{
+    background-color: var(--two);
+    border-radius:10px;
+    padding-right: .6rem;
+    transition: .5s;
+}
+

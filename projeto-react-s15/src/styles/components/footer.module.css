@@ -1,5 +1,5 @@
 .footerContainer {
-    background-color: var(--darker);
+    background-color: var(--black);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,7 +9,7 @@
 }
 
 .footerContent {
-    color: var(--green);
+    color: #fad499;
     font-size: .8rem;
 }
 

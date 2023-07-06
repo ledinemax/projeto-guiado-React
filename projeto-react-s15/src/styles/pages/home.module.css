@@ -3,24 +3,26 @@
     justify-content: center;
     align-items: center;
     gap: 4rem;
-    background-color: var(--dark);
     padding: 5rem;
-    box-shadow: inset 0px 1px 3px 0px rgba(0,0,0,0.75);
+    background-color: var(--two);
+    width: 100%;
 }
 
 .cardContainer {
     text-align: center;
+    background-color: var(--six);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.09);
 }
 
-.cardTitle{
-    color: var(--green);
+.cardTitle {
+    color: var(--three);
+
 }
 
 .cardDescription {
-    color: var(--light);
-    text-align: justify;
-    letter-spacing: -1px;
-    font-weight: 400;
-    text-shadow: 1px 1px 1px black;
-}
+    color: var(--four);
+    font-weight: 300;
 
+}
